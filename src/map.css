@@ -1,0 +1,23 @@
+.map-container {
+  flex: 0 0 auto;
+  margin-left: 0;
+}
+
+.map-container svg {
+  width: 500px;
+  height: auto;
+  display: block;
+}
+
+/* hover only dims the shape under your cursor */
+
+.map-container svg path[id]:hover,
+.map-container svg rect[id]:hover,
+.map-container svg circle[id]:hover,
+.map-container svg polygon[id]:hover,
+.map-container svg ellipse[id]:hover,
+.map-container svg line[id]:hover,
+.map-container svg polyline[id]:hover {
+  opacity: 0.6 !important;
+  transition: opacity 0.2s;
+}

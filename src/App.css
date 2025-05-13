@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+.app {
+  padding: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* wrap map + legend side by side */
+.main-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  border: none;
+}
+
+.save-load {
+  margin: 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.save-load form input {
+  width: 120px;
+}
+.saved-maps ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.saved-maps li {
+  display: flex;
+  gap: 0.5rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

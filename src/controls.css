@@ -1,0 +1,31 @@
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controls {
+  /* use Rajdhani, fallback to sans-serif */
+  font-family: 'Rajdhani', sans-serif;
+  /* overall size for the labels/inputs */
+  font-size: 1rem;
+  /* line height for legibility */
+  line-height: 1.4;
+}
+
+/* make the select and color-picker match */
+.controls select,
+.controls input[type="color"] {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* if you want the labels bold */
+.controls label {
+  font-weight: 700;
+}
