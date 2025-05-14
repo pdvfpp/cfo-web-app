@@ -8,11 +8,11 @@ export default function SaveMap({ shapeAlliances, allianceColors }) {
     e.preventDefault();
     try {
       await saveMap(name, shapeAlliances, allianceColors);
-      alert(`Map "${name}" saved!`);
+      alert(`Map "${name}" published!`);
       setName("");
     } catch (err) {
       console.error(err);
-      alert("Error saving map.");
+      alert("Error publishing map.");
     }
   };
 
@@ -20,12 +20,12 @@ export default function SaveMap({ shapeAlliances, allianceColors }) {
     <form className="save-map" onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Map name"
+        placeholder="Name"
         value={name}
         onChange={e => setName(e.target.value)}
         required
       />
-      <button type="submit">Save map</button>
+      <button type="submit">Publish Map</button>
     </form>
   );
 }

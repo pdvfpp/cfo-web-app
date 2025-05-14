@@ -26,7 +26,7 @@ export default function Login() {
   };
 
   return user
-    ? <button onClick={handleSignOut}>
+    ? <button onClick={handleSignOut} style={{ marginBottom: '20px' }}>
         Sign out
       </button>
     : (

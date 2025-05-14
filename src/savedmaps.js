@@ -18,11 +18,11 @@ export default function SavedMaps({ onLoad }) {
     fetchList();
   }, []);
 
-  if (maps.length === 0) return <p>No saved maps</p>;
+  if (maps.length === 0) return <p>No published maps</p>;
 
   return (
     <div className="saved-maps">
-      <h3>Saved maps</h3>
+      <h3>Published Maps</h3>
       <ul>
         {maps.map(name => (
           <li key={name}>
